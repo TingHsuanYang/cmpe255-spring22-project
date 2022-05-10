@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "5e9bfc78-7268-49d7-b1a9-714e75652462",
+		"name": "CMPE 255",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Q1-Dylan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"genres\" : [\"Action Adventure\",\"Fantasy\"],\n    \"rating\" : \"E\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/Q1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Q1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q2-Aditya",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"platform\" : \"gamecube\",\n    \"type\" : \"singleplayer\",\n    \"rating\" : \"T\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/Q2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Q2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q3-Sahib",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"platform\" : [\"playstation-4\"],\n    \"developer\" : \"konami\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/Q3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Q3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q4-Evan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"genre\" : [\"Action Adventure\",\"Fantasy\"],\n    \"type\" : \"singleplayer\",\n    \"rating\" : \"T\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/Q4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Q4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
