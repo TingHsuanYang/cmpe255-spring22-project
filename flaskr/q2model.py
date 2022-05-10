@@ -167,7 +167,7 @@ class Q2Model:
 
         return {
             'RandomForestRegressor user_score': float(rf_max_score),
-            'RandomForestRegressor recommended genre': str(rf_pop_genre).split('_',2)[1]
+            'RandomForestRegressor recommended genre': str(rf_pop_genre).split('_',1)[1]
         }
 
 
