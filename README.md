@@ -18,10 +18,12 @@ Dataset: https://www.kaggle.com/datasets/xcherry/games-of-all-time-from-metacrit
 Models are all subpar in their scores and accuracy. The predictions vary along what is basically a straight line where the predicted output is always in the same range 
 regardless of what the actual scores are. This is due to a combination of problems.
 
-* Trying to predict numerical field with solely catgorical features
+* Trying to predict numerical field with solely categorical features
 * A large feature set once one hot encoded given the variety of unique categories
-* A lack of significant correlation in the data  
+* A lack of significant correlation in the data
 
+In case of regression,all the features except 2 are categorical which needs encoding and the number of observations are not spread evenly among 
+all these unique categories which makes it difficult to find a relation in the dataset.
 The lack of significant correlation in the data is the biggest factor most likely. While the project attempted to determine things like the reception of a game from 
 its genres or platforms, it is probable that there simply isn't any significant signal. It doesn't necessarily matter what genre or platform a game is on. Some games 
 will be good or bad regardless of genre or platform and thus it evens out over a large sample size. This means using these features cannot accurately determine 
