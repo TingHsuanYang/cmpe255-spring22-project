@@ -19,7 +19,7 @@ def q1_predict():
     return jsonify(q1.predict(genres=body['genres'], rating=body['rating']))
     
 @app.route('/Q2', methods=['POST'])
-def q4_predict():
+def q2_predict():
     body = request.json
     return jsonify(q2.predict(platform=body['platform'], type=body['type'], rating=body['rating']))
 
