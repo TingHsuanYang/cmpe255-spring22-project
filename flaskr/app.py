@@ -1,6 +1,7 @@
 import flask
 from flask import request, jsonify
 from flaskr.q1model import Q1Model
+from flaskr.q2model import Q2Model
 from flaskr.q3model import Q3Model
 from flaskr.q4model import Q4Model
 
@@ -8,6 +9,7 @@ app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 q1 = Q1Model()
+q2 = Q2Model()
 q3 = Q3Model()
 q4 = Q4Model()
 
@@ -16,6 +18,11 @@ def q1_predict():
     body = request.json
     return jsonify(q1.predict(genres=body['genres'], rating=body['rating']))
     
+@app.route('/Q2', methods=['POST'])
+def q4_predict():
+    body = request.json
+    return jsonify(q2.predict(platform=body['platform'], type=body['type'], rating=body['rating']))
+
 @app.route('/Q3', methods=['POST'])
 def q3_predict():
     body = request.json
